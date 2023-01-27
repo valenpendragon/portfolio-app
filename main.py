@@ -19,3 +19,8 @@ with col2:
     """
     st.info(content)
 
+contact_msg = """
+Below, you can find my slowly growing list of applications I built in Python. 
+Feel free to contact me using the links in the left panel.
+"""
+st.write(contact_msg)
