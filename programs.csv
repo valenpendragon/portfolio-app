@@ -1,0 +1,7 @@
+Title,Description,URL,Image,Status
+ToDo App,A distraction free web app to help productivity.,https://github.com/valenpendragon/my-web-todo-app,1.png,prototype
+ToDo Desktop App,Desktop version of the web app.,https://github.com/valenpendragon/todo-list,2.png,prototype
+Web Portfolio App,A web app that displays a list of all of my programming applications.,https://github.com/valenpendragon/portfolio-app,3.png,prototype
+History Skeleton Generator,A Jupyter Notebook application: It import a workbook of spreadsheets with possible historical events for kingdoms or groups. It exports a historical timeline for each group specified.,https://github.com/valenpendragon/history-skeleton-generator,4.png,working
+Digital Story Creator,"The Digital Story Creator manipulates card images on a board to help writers and RPG GMs create stories. When completed, it should import any card image set, resize them for the app, and allow the user to place anywhere on screen, even tucking them partly under other images.",https://github.com/valenpendragon/digital-story-creator,5.png,early development
+,,,,
