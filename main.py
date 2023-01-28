@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+import openpyxl
 
 st.set_page_config(layout="wide")
 
@@ -24,3 +26,14 @@ Below, you can find my slowly growing list of applications I built in Python.
 Feel free to contact me using the links in the left panel.
 """
 st.write(contact_msg)
+
+col3, col4 = st.columns(2)
+
+df = pd.read_excel("programs.xlsx")
+with col3:
+    for index, row in df[0::2].iterrows():
+        st.header(row["Title"])
+
+with col4:
+    for index, row in df[1::2].iterrows():
+        st.header(row["Title"])
