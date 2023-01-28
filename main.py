@@ -27,13 +27,19 @@ Feel free to contact me using the links in the left panel.
 """
 st.write(contact_msg)
 
-col3, col4 = st.columns(2)
+col3, col_empty, col4 = st.columns([1.5, 0.5, 1.5])
 
 df = pd.read_excel("programs.xlsx")
 with col3:
     for index, row in df[0::2].iterrows():
         st.header(row["Title"])
+        st.write(row["Description"])
+        st.image("images/" + row['Image'])
+        st.write(f"[Source Code]({row['URL']})")
 
 with col4:
     for index, row in df[1::2].iterrows():
         st.header(row["Title"])
+        st.write(row["Description"])
+        st.image("images/" + row['Image'])
+        st.write(f"[Source Code]({row['URL']})")
